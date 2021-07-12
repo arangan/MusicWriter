@@ -1,0 +1,63 @@
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./siddhanta.ttf);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content max-content minmax(200px, 30%) auto max-content minmax(
+      300px,
+      max-content
+    );
+  /* grid-gap: 1px; */
+  /* background-color: black; */
+  row-gap: 4px;
+  column-gap: 1px;
+  border: solid 1px black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'myFirstFont';
+  font-size: 25px;
+
+  .logo {
+    grid-column-start: span 6;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  > div {
+    background-color: white;
+  }
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  /* grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content max-content max-content; */
+  row-gap: 4px;
+  column-gap: 1px;
+  border: solid 1px black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'myFirstFont';
+  font-size: 25px;
+
+  > span {
+    background-color: white;
+  }
+}
