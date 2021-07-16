@@ -1,6 +1,6 @@
 body {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 @font-face {
@@ -10,16 +10,14 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: max-content max-content minmax(200px, 30%) auto max-content minmax(
-      300px,
-      max-content
-    );
-  /* grid-gap: 1px; */
+  grid-template-columns: max-content max-content minmax(200px, 270px) auto max-content minmax(200px, max-content);
   /* background-color: black; */
   row-gap: 4px;
   column-gap: 1px;
   border: solid 1px black;
   width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
   margin-left: auto;
   margin-right: auto;
   font-family: 'myFirstFont';
@@ -35,6 +33,13 @@ body {
     background-color: white;
   }
 }
+.underLine {
+  border-bottom: 1px solid black;
+}
+
+.doubleUnderLine {
+  border-style: none none double none;
+}
 
 .leftAlign {
   text-align: left;
@@ -42,6 +47,16 @@ body {
 
 .rightAlign {
   text-align: right;
+}
+
+.labelContainer {
+  @extend .underLine;
+  display: block;
+  float: right;
+}
+
+.colon {
+  padding-right: 5px;
 }
 
 .bodyGrid {

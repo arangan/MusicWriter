@@ -7,8 +7,8 @@ export class Header {
   taalMatra = 10;
   constructor() {
     this.symbol = 'உ';
-    this.raagam = '';
-    this.taal = '';
+    this.raagam =  ''; //\u0803'; //'\u03C0';
+    this.taal = 'A\u00A9';
     this.aroh = '';
     this.avroh = '';
   }
