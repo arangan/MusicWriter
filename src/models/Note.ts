@@ -1,6 +1,6 @@
 export class Note {
-  swaram: string;
+  Swaram: string;
   constructor() {
-    this.swaram = '';
+    this.Swaram = '';
   }
 }

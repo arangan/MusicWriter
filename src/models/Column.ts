@@ -1,7 +1,7 @@
 import { Note } from './Note';
 export class Column {
-  note: Note;
+  Note: Note;
   constructor() {
-    this.note = new Note();
+    this.Note = new Note();
   }
 }
